@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body>div{
+            width: 1000px;
+            margin: 0 auto;/*居中*/
+        }
+        div>div>div{
+            background-color: #e8e8e8;
+        }
+        #t-left{
+            width: 611px;
+            height: 376px;
+            float: left;
+        }
+        #t-right{
+            width: 375px;
+            height: 376px;
+            float: right;
+        }
+        /*顶部一行子元素全部浮动 为了避免高度为零 导致的异常*/
+        #top-div{
+            overflow: hidden;
+            margin-bottom: 13px;
+        }
+        #b-left{
+            width: 366px;
+            height: 233px;
+            float: left;
+        }
+        .b-right{
+            width: 198px;
+            height: 233px;
+            float: right;
+            margin-left: 13px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="top-div">
+        <div id="t-left"></div>
+        <div id="t-right"></div>
+    </div>
+    <div id="bottom-div">
+        <div id="b-left"></div>
+        <div class="b-right"></div>
+        <div class="b-right"></div>
+        <div class="b-right"></div>
+    </div>
+</div>
+</body>
+</html>

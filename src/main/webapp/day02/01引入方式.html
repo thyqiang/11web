@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--内部样式，好处可以复用 弊端：只能在当前页面复用-->
+    <style>
+        /*标签名选择器*/
+        h2{
+            color: blueviolet;
+        }
+        h3{
+            color: chartreuse;
+        }
+    </style>
+    <!--引入外部css样式文件-->
+    <link rel="stylesheet" href="my.css">
+
+</head>
+<body>
+<!--内联样式优先级最高，内部和外部谁后执行就是谁-->
+<!--内联样式弊端，不能复用-->
+<h1 style="color: #006439">内联样式测试1</h1>
+<h1 style="color: rgb(240,248,255)">内联样式测试2</h1>
+<h2>内部样式测试1</h2>
+<h2>内部样式测试2</h2>
+<h3>外部样式测试1</h3>
+<h3>外部样式测试2</h3>
+</body>
+</html>

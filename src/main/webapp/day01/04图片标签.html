@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--src路径
+    相对路径：访问站内资源时使用
+        1：图片和页面在同一目录：直接写图片名
+        2：图片在页面的上级目录：../图片名
+        3：图片在页面的下级目录：文件夹名/图片名
+    绝对路径：访问站外资源时使用,这种叫做图片盗链，
+    好处是节省本站资源，但是存在找不到图片的风险。
+-->
+<!--alt：图片不能正常显示时出现的文本-->
+<img src="156.jpg" alt="这是腾格尔">
+<!--title：标题，鼠标悬停时显示的文本-->
+<img src="../14.jpg" alt="" title="女神">
+<!--设置图片尺寸 height/width 如果只给宽度赋值，高度会等比例缩放-->
+<img src="abc/16.jpg" alt="" height="100" width="200">
+<img src="http://www.tmooc.cn/course/303745.shtml" alt="这是偷来的图">
+</body>
+</html>

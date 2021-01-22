@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>注册页面</h3>
+<!--action设置请求地址-->
+<form action="http://www.tmooc.cn">
+    <!--name是所有控件必须写的属性，如果不写则不会提交数据-->
+    <!--placeholder 占位文本 maxlength最大字符长度
+    value默认值   readonly只读-->
+    用户名：<input type="text" name="username"
+               placeholder="请输入你的用户名" maxlength="5"
+               value="abcd" readonly="readonly"><br>
+    <!--密码框和文本框属性通用-->
+    密码：<input type="password"
+              placeholder="请输入密码" name="password"><br>
+    <!--两个单选框必须有相同的name值 如果不给单选框设置value则提交到服务器的就是on-->
+    <!--radio单选 checkbox多选-->
+    性别：<input id="r1" type="radio" name="gender" value="m">
+    <label for="r1">男</label>
+    <!--checked设置默认选中-->
+    <input id="r2" type="radio" checked="checked" name="gender" value="w">
+    <label for="r1">女</label><br>
+    兴趣爱好：<input type="checkbox" name="hobby" value="cy">抽烟
+    <input type="checkbox" name="hobby" value="hj">喝酒
+    <input type="checkbox" name="hobby"
+           checked="checked" value="ldm">撸代码<br>
+    <!--日期选择器-->
+    生日：<input type="date" name="birthday"><br>
+    <!--文件选择器-->
+    靓照：<input type="file" name="pic"><br>
+    <!--文本域：可以输入多行文本，文本框是单行文本-->
+    <!--cols代表列 rows代表行-->
+    自我介绍：<textarea name="intro" id="t1" placeholder="这家伙很懒..."
+                   cols="30" rows="3"></textarea><br>
+    <!--下拉选 value设置提交的值 selected设置默认选中-->
+    所在地：
+    <select name="city">
+        <option value="bj">北京</option>
+        <option value="sh" selected="selected">上海</option>
+        <option value="gz">广州</option>
+    </select><br>
+
+    <input type="submit" value="注册">
+    <!--重置按钮-->
+    <input type="reset">
+    <!--自定义按钮-->
+    <input type="button" value="按钮">
+</form>
+</body>
+</html>
